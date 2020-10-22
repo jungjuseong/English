@@ -1,8 +1,8 @@
 설치 방법
 
-install python 2.7
-yarn install
-yarn upgrade
+- install python 2.7
+- yarn install
+- yarn upgrade
 
 PowerShell에서
 
