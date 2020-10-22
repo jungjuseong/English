@@ -97,7 +97,7 @@ export class Timer extends React.Component<ITimer> {
      @observable private m_text = '';
      @observable private m_d = '';
 
-     private _drawArc: ((time: number) => void) & _.Cancelable;
+     private _drawArc: ((time: number) => void); // & _.Cancelable;
      constructor(props: ITimer) {
          super(props);
          this.m_text = this._getTime(this.props.state.max);
@@ -171,7 +171,7 @@ export class Timer extends React.Component<ITimer> {
              this._drawArc(time);
              window.requestAnimationFrame(this._run);
          } else {
-			this._drawArc.cancel();
+			//this._drawArc.cancel();
 			this.m_d = _dArc(_arcC, _arcC, _arcR, 0, 360);
 			this.props.onComplete();
          }
@@ -214,7 +214,7 @@ export class CountDown2 extends React.Component<ITimer> {
 	private m_canvas!: HTMLCanvasElement;
 	private m_ctx!: CanvasRenderingContext2D;
 	private m_r: number = 0;
-	private _drawArc: ((time: number) => void) & _.Cancelable;
+	private _drawArc: ((time: number) => void); // & _.Cancelable;
 
 	@observable private m_view = false;
 

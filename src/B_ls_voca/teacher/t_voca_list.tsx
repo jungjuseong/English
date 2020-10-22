@@ -104,7 +104,7 @@ class VocaList extends React.Component<IComp> {
 	private m_idx: number = -1;
 	private _words: common.IWordData[] = [];
 
-	private _closeChooseWord: (() => void) & _.Cancelable;
+	private _closeChooseWord: (() => void); // & _.Cancelable;
 
 	private _pages: common.IWordData[][];
 	constructor(props: IComp) {
