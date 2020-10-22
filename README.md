@@ -6,9 +6,9 @@
 
 PowerShell에서
 
-yarn run b_ls_voca_s
-yarn run b_ls_voca_t
-yarn run server
+- yarn run b_ls_voca_s
+- yarn run b_ls_voca_t
+- yarn run server
 
 웹브라우저에서
 
